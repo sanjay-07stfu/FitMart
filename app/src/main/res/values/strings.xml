@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">FitMart</string>
+
+    <!-- Auth -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="already_have_account">Already have an account? </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="or_continue_with">Or continue with</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="create_account">Create Account</string>
+    <string name="join_fitmart">Join FitMart today</string>
+
+    <!-- Home -->
+    <string name="home">Home</string>
+    <string name="shop">Shop</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
+    <string name="search_products">Search products…</string>
+    <string name="featured">Featured Products</string>
+    <string name="categories">Categories</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="best_sellers">Best Sellers</string>
+    <string name="see_all">See All</string>
+    <string name="hello_user">Hello, %1$s 👋</string>
+    <string name="find_fitness">Find Your Fitness Gear</string>
+
+    <!-- Product -->
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="price">₹%1$s</string>
+    <string name="original_price">₹%1$s</string>
+    <string name="off">%1$s%% OFF</string>
+    <string name="rating">Rating</string>
+    <string name="reviews">%1$s Reviews</string>
+    <string name="description">Description</string>
+    <string name="in_stock">In Stock</string>
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="quantity">Quantity</string>
+    <string name="product_details">Product Details</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="added_to_cart">Added to cart!</string>
+
+    <!-- Cart -->
+    <string name="your_cart">Your Cart</string>
+    <string name="empty_cart">Your cart is empty</string>
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="delivery">Delivery</string>
+    <string name="total">Total</string>
+    <string name="free">Free</string>
+    <string name="items">%1$d items</string>
+
+    <!-- Profile -->
+    <string name="my_orders">My Orders</string>
+    <string name="my_wishlist">My Wishlist</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="address_book">Address Book</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="notifications">Notifications</string>
+    <string name="help_support">Help &amp; Support</string>
+
+    <!-- Categories -->
+    <string name="supplements">Supplements</string>
+    <string name="equipment">Equipment</string>
+    <string name="apparel">Apparel</string>
+    <string name="accessories">Accessories</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="cardio">Cardio</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="loading">Loading…</string>
+</resources>

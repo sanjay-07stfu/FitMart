@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors -->
+    <color name="primary">#FF6B35</color>
+    <color name="primary_dark">#E55A25</color>
+    <color name="primary_light">#FF8C5A</color>
+    <color name="accent">#2ECC71</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_hint">#AAAAAA</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Utility Colors -->
+    <color name="divider">#E0E0E0</color>
+    <color name="error">#E74C3C</color>
+    <color name="star_color">#FFC107</color>
+    <color name="badge_red">#E74C3C</color>
+    <color name="green_success">#27AE60</color>
+    <color name="orange_warning">#F39C12</color>
+
+    <!-- Bottom Nav -->
+    <color name="nav_selected">#FF6B35</color>
+    <color name="nav_unselected">#999999</color>
+</resources>

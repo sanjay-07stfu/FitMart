@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/surface"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:elevation="4dp">
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_category_chip"
+                android:src="@drawable/ic_back"
+                android:tint="@color/primary" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Checkout"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Order form -->
+        <LinearLayout
+            android:id="@+id/layout_order_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Address"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.FitmartApp.TextInputLayout"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:hint="Full Name">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.FitmartApp.TextInputLayout"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:hint="Street Address">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_address" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:maxLines="2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.FitmartApp.TextInputLayout"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:hint="City">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_city" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.FitmartApp.TextInputLayout"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:hint="PIN Code">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_pincode" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="number"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Summary -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Price Summary" android:textStyle="bold"
+                        android:textSize="16sp" android:textColor="@color/text_primary" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Subtotal" android:textColor="@color/text_secondary" />
+                        <TextView android:id="@+id/tv_subtotal" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:textColor="@color/text_primary" android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginTop="6dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Delivery" android:textColor="@color/text_secondary" />
+                        <TextView android:id="@+id/tv_delivery" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:textColor="@color/green_success" android:textStyle="bold" />
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginVertical="8dp" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Total" android:textStyle="bold"
+                            android:textColor="@color/text_primary" android:textSize="16sp" />
+                        <TextView android:id="@+id/tv_total" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:textColor="@color/primary"
+                            android:textSize="18sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ProgressBar android:id="@+id/progress_bar" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center"
+                android:layout_marginTop="12dp" android:visibility="gone"
+                android:indeterminateTint="@color/primary" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_place_order"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:text="Place Order"
+                android:textStyle="bold"
+                app:backgroundTint="@color/primary"
+                app:cornerRadius="12dp" />
+        </LinearLayout>
+
+        <!-- Order Success State -->
+        <LinearLayout
+            android:id="@+id/layout_order_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp"
+            android:visibility="gone">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🎉" android:textSize="80sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:text="Order Placed!"
+                android:textColor="@color/green_success" android:textSize="28sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:text="Your order has been placed successfully.\nExpected delivery in 3-5 business days."
+                android:textColor="@color/text_secondary" android:textSize="14sp" android:gravity="center" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_continue_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginTop="24dp"
+                android:paddingHorizontal="32dp"
+                android:text="Continue Shopping"
+                android:textStyle="bold"
+                app:backgroundTint="@color/primary"
+                app:cornerRadius="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
